@@ -28,7 +28,8 @@ Enemy.prototype.update = function(dt) {
     }
 
     // Handle collision with player
-    if (player.x < this.x + 70 && player.x + 70 > this.x && + player.y < this.y + 70 && player.y + 70 > this.y) {
+    if (player.x < this.x + 70 && player.x + 70 > this.x && + 
+    	player.y < this.y + 70 && player.y + 70 > this.y) {
         player.x = randomStart[Math.floor(Math.random() * randomStart.length)];
         player.y = 400;
     }
@@ -49,13 +50,13 @@ let Player = function(x, y) {
 };
 
 // Array of player starting positions
-let randomStart = [100, 200, 300, 405];
+let randomStart = [100, 200, 300, 400];
 
 // Player update method
 Player.prototype.update = function() {
-    if (this.y < 0) {
+    if (this.y <= 0) {
         console.log('water!');
-        // Randomize start location
+        // Randomize start location when updating
         this.x = randomStart[Math.floor(Math.random() * randomStart.length)];
         this.y = 400;
     }
@@ -94,7 +95,6 @@ for (const enemyLocation of enemyLocations) {
     allEnemies.push(enemy);
     console.log(enemyLocation);
 }
-
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.

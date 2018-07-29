@@ -2,6 +2,10 @@
 var Enemy = function() {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
+    this.x = x;
+    this.y = y;
+    // Randomized speed
+    this.speed = speed + Math.floor(Math.random() * 250);;
 
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images

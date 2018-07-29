@@ -42,6 +42,16 @@ let Player = function(x, y) {
     this.player = 'images/char-boy.png';
 };
 
+// Player update method
+Player.prototype.update = function() {
+    if (this.y < 0) {
+        console.log('water!');
+        // Randomize start location
+        this.x = randomStart[Math.floor(Math.random() * randomStart.length)];
+        this.y = 400;
+    }
+};
+
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies

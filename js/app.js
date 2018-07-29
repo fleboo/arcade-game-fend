@@ -42,6 +42,9 @@ let Player = function(x, y) {
     this.player = 'images/char-boy.png';
 };
 
+// Array of player starting positions
+let randomStart = [100, 200, 300, 405];
+
 // Player update method
 Player.prototype.update = function() {
     if (this.y < 0) {

@@ -15,12 +15,12 @@ This is a simple arcade game that contains a Player and Enemies (cockroaches). T
 ## How I Designed the Game
 
 * The Enemy constructor function
-**Set the Enemy initial location
-**Set the Enemy speed
-**Update the Enemy location
-**Handle collisions with Player
+	*Set the Enemy initial location
+	*Set the Enemy speed
+	*Update the Enemy location
+	*Handle collisions with Player
 *The Player constructor functions
-**Load player image
-**Set player initial location
-**Render method for the player
-**Handle user arrow key inputs
+	*Load player image
+	*Set player initial location
+	*Render method for the player
+	*Handle user arrow key inputs

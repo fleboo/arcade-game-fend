@@ -4,6 +4,8 @@ This is a simple arcade game that contains a Player and Enemies (cockroaches). T
 
 ## Instructions
 
+* Clone the application ```$git clone https://github.com/fleboo/arcade-game-fend.git```
+* Navigation to the project directory and open ```index.html``` file
 * The games begins automatically upon the web page launch
 * Begin by pressing any of the arrow keys. 
 * Begin moving toward the water, ensure to avoid the enemies.
